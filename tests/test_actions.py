@@ -271,6 +271,8 @@ def test_actions_row_inline_variant(client, admin_user):
     assert response.status_code == HTTPStatus.OK
     assert "Changelist row action danger inline" in content
     assert "bg-red-600" in content
+    assert "Changelist row action success inline" in content
+    assert "bg-green-600" in content
 
 
 @pytest.mark.django_db
